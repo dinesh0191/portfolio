@@ -3,7 +3,6 @@ import sanityClient from "../client";
 
 function Project() {
   const [projectData, setProjectData] = useState(null);
-  const [tags, setTags] = useState("");
 
   useEffect(() => {
     sanityClient
