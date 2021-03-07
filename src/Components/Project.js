@@ -47,18 +47,18 @@ function Project() {
                   </a>
                 </h3>
                 <div className="text-gray-500 text-xs space-x-4">
-                  <div className="technology-stack">
-                    {/* <p>Technology Stack - </p> */}
+                  {/* <div className="technology-stack">
+                    <p>Technology Stack - </p>
                     <ul className="dev-icons-project">
                       <li
                         key={project.title}
                         className="software-skill-inline"
                         name={project.tags}
                       >
-                        {/* <i className={`fab fa-html5`}></i> */}
+                        <i className={`fab fa-html5`}></i>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                   <p className=" text-lg text-gray-700 leading-relaxed">
                     {project.description}
                   </p>
