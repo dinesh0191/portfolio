@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 const Navbar = () => {
   return (
     <header className="bg-transparent">
-      <div className="container mx-auto flex justify-between">
+      <div className="container mx-auto flex justify-between sm:text-left">
         <nav className="flex">
           <NavLink
             to="/"

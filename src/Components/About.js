@@ -34,15 +34,17 @@ function About() {
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRSsAAN_P9NyVeZx9rwniAC9HC1c_od3IX-Q&usqp=CAU"
         alt="bg-for-about-page"
-        className="absolute w-full"
+        className="absolute w-full h-full"
       />
-      <div className="p-10 lg:pt-48 container mx-auto relative">
-        <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
-          <img
-            src={dineshYadav}
-            alt={author.name}
-            className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
-          />
+      <div className="p-10 lg:pt-48 container mx-auto relative md:max-w-2x1">
+        <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20 md:flex">
+          <div className=" md:flex-shrink-0">
+            <img
+              src={dineshYadav}
+              alt={author.name}
+              className="rounded md:w-32 h-32 lg:w-64 lg:h-64 mr-8"
+            />
+          </div>
           <div className="text-lg flex flex-col justify-center">
             <h1 className="cursive text-6xl text-green-300 mb-4">
               Hey there, I'm{" "}

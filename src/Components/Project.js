@@ -22,17 +22,17 @@ function Project() {
   }, []);
 
   return (
-    <main className="bg-green-100 min-h-screen p-12">
+    <main className="bg-green-100 min-h-screen p-12 md:max-w-2x1">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">Projects</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome to projects page!
         </h2>
-        <section className="grid grid-cols-2 gap-8">
+        <section className="grid grid-cols gap-8 md:grid-cols-2">
           {projectData &&
             projectData.map((project, index) => (
               <article
-                className="relative rounded-lg shadow-xl bg-white p-16"
+                className="relative rounded-lg shadow-xl bg-white p-16  md:flex-shrink-0"
                 key={project.title}
               >
                 <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
