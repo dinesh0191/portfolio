@@ -92,18 +92,19 @@
   padding-right: 8px;
 }
 .dev-icons-project {
+  padding-left: 0;
   list-style: none;
   font-size: 28px;
-  margin-top: 2px;
-  padding-left: 8px;
 }
+
 .technology-stack {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .technology-stack p {
   font-size: 20px;
-  padding-top: 4px;
+  padding-top: 5px;
 }
 .view-link {
   margin-top: 10px;

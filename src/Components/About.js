@@ -1,34 +1,10 @@
-import React, { useEffect, useState } from "react";
-import sanityClient from "../client";
-import BlockContent from "@sanity/block-content-to-react";
+import React from "react";
 import dineshYadav from "../Assets/dineshYadav.jpg";
 import { Fade } from "react-reveal";
-import { contactInfo } from "../skillsSection";
+import { contactInfo, aboutME } from "../skillsSection";
 import { SocialIcon } from "react-social-icons";
 
 function About() {
-  const [author, setAuthor] = useState(null);
-
-  useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "author"]{
-      name,
-      bio,
-      image,
-    }`
-      )
-      .then((data) => setAuthor(data[0]))
-      .catch(console.error);
-  }, []);
-
-  if (!author)
-    return (
-      <div className="font-bold cursive leading-none lg:leading-snug home-load">
-        Loading...
-      </div>
-    );
-
   return (
     <main className="relative">
       <img
@@ -41,23 +17,17 @@ function About() {
           <div className=" md:flex-shrink-0">
             <img
               src={dineshYadav}
-              alt={author.name}
+              alt={aboutME.name}
               className="rounded md:w-32 h-32 lg:w-64 lg:h-64 mr-8"
             />
           </div>
           <div className="text-lg flex flex-col justify-center">
             <h1 className="cursive text-6xl text-green-300 mb-4">
               Hey there, I'm{" "}
-              <span className="text-green-100">{author.name}</span>
+              <span className="text-green-100">{aboutME.name}</span>
               🖐️
             </h1>
-            <div className="prose lg:prose-xl text-white">
-              <BlockContent
-                blocks={author.bio}
-                projectId="f8sxiaud"
-                dataset="production"
-              />
-            </div>
+            <div className="prose lg:prose-xl text-white">{aboutME.bio}</div>
           </div>
         </section>
         <Fade bottom duration={2000}>
