@@ -154,4 +154,6 @@ export const aboutME = {
   name: "Dinesh Yadav",
   bio:
     "A Civil engineering graduate of the 2016 batch. Then started preparing for government services and managing construction projects side by side. From the past 8-9 months started taking interest in the IT industry, self-learned and created some projects in HTML, CSS and JavaScript and currently exploring React.js. 😎",
+  goal: "🥅 2021 Goals: Explore and learn more in the front-end technologies",
+  funFact: "⚡ Fun fact: I love to read Indian history",
 };

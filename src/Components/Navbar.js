@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+
 const Navbar = () => {
   return (
     <header className="bg-transparent">
-      <div className="container mx-auto flex justify-between sm:text-left">
+      <div className="container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink
             to="/"
@@ -35,6 +36,14 @@ const Navbar = () => {
           >
             About Me!
           </NavLink>
+          <div className="inline-flex items-center py-3 px-3 my-6 rounded text-red-600 hover:text-green-800">
+            <a
+              href="https://drive.google.com/file/d/1IK6H1BEThI4gUFR_P9VppBnJ7Guz67HI/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </div>
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
           <SocialIcon

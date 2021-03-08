@@ -3,16 +3,18 @@ import dineshYadav from "../Assets/dineshYadav.jpg";
 import { Fade } from "react-reveal";
 import { contactInfo, aboutME } from "../skillsSection";
 import { SocialIcon } from "react-social-icons";
+import aboutbg from "../Assets/about-bg.jpg";
 
 function About() {
   return (
     <main className="relative">
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRSsAAN_P9NyVeZx9rwniAC9HC1c_od3IX-Q&usqp=CAU"
+        src={aboutbg}
         alt="bg-for-about-page"
         className="absolute w-full h-full"
       />
-      <div className="p-10 lg:pt-48 container mx-auto relative md:max-w-2x1">
+
+      <div className="p-10 lg:pt-48 container mx-auto relative">
         <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20 md:flex">
           <div className=" md:flex-shrink-0">
             <img
@@ -28,6 +30,10 @@ function About() {
               🖐️
             </h1>
             <div className="prose lg:prose-xl text-white">{aboutME.bio}</div>
+            <div className="prose lg:prose-xl text-white">- {aboutME.goal}</div>
+            <div className="prose lg:prose-xl text-white">
+              - {aboutME.funFact}
+            </div>
           </div>
         </section>
         <Fade bottom duration={2000}>
