@@ -40,6 +40,7 @@ const Navbar = () => {
             <a
               href="https://drive.google.com/file/d/1IK6H1BEThI4gUFR_P9VppBnJ7Guz67HI/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               Resume
             </a>
