@@ -6,11 +6,11 @@ import DisplayLottie from "./DisplayLottie";
 
 function Skills() {
   return (
-    <div className="md:max-w-2xl">
-      <div className="md:flex">
-        <div className="skills-main-div">
+    <div>
+      <div>
+        <div className="skills-main-div grid grid-cols gap-8 md:grid-cols-2">
           <Fade left duration={4000}>
-            <div className="skills-image-div md:flex-shrink-0">
+            <div className="skills-image-div">
               {illustration.animated ? (
                 <DisplayLottie animationData={codingPerson} />
               ) : (
@@ -23,7 +23,7 @@ function Skills() {
             </div>
           </Fade>
           <Fade right duration={2000}>
-            <div className="skills-text-div md:flex-shrink-0">
+            <div className="grid grid-flow-row auto-rows-max">
               <div className="skills-heading">{skillsSection.title}</div>
               <div className="skills-text-subtitle subTitle">
                 {skillsSection.subTitle}

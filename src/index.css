@@ -60,15 +60,6 @@ body {
   justify-content: center;
 }
 
-.skills-main-div {
-  display: grid;
-  grid-template-columns: 40% auto;
-}
-
-.skills-text-div {
-  display: grid;
-  grid-template-rows: auto;
-}
 .skills-heading {
   font-size: 56px;
   font-weight: 600;
@@ -79,6 +70,7 @@ body {
   font-weight: 600;
   color: #868e96;
 }
+
 .skills-text-container {
   display: grid;
 }

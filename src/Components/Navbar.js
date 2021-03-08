@@ -5,48 +5,48 @@ import { SocialIcon } from "react-social-icons";
 const Navbar = () => {
   return (
     <header className="bg-transparent">
-      <div className="container mx-auto flex justify-between">
-        <nav className="flex">
+      <div className="grid grid-flow-col auto-cols-2 md:grid-cols-2">
+        <nav className="inline-flex">
           <NavLink
             to="/"
             exact
             activeClassName="text-white"
-            className="inline-flex items-center py-6 px-3 mr-4 text-red-600 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
+            className="inline-grid items-center py-6 px-3 mr-4 text-red-600 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
           >
             dinesh-Yadav
           </NavLink>
           <NavLink
             to="skills"
             activeClassName="text-gr bg-black"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-600 hover:text-green-800"
+            className="inline-grid items-center py-3 px-3 my-4 rounded text-red-600 hover:text-green-800"
           >
             Skills
           </NavLink>
           <NavLink
             to="project"
             activeClassName="text-red-100 bg-green-100"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-600 hover:text-green-800"
+            className="inline-grid items-center py-3 px-3 my-4 rounded text-red-600 hover:text-green-800"
           >
             Projects
           </NavLink>
           <NavLink
             to="about"
             activeClassName="text-red-100 bg-blue-400"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-600 hover:text-green-800"
+            className="inline-grid items-center py-3 px-3 my-4 rounded text-red-600 hover:text-green-800"
           >
             About Me!
           </NavLink>
-          <div className="inline-flex items-center py-3 px-3 my-6 rounded text-red-600 hover:text-green-800">
+          <div className="inline-grid items-center py-3 px-3 my-4 rounded text-red-600 hover:text-green-800">
             <a
               href="https://drive.google.com/file/d/1IK6H1BEThI4gUFR_P9VppBnJ7Guz67HI/view?usp=sharing"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Resume
             </a>
           </div>
         </nav>
-        <div className="inline-flex py-3 px-3 my-6">
+        <div className="py-3 px-3 my-4 col-end-12">
           <SocialIcon
             url="https://twitter.com/DineshY84547011?s=01"
             className="mr-4"

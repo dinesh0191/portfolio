@@ -14,7 +14,7 @@ function About() {
         className="absolute w-full h-full"
       />
 
-      <div className="p-10 lg:pt-48 container mx-auto relative">
+      <div className="p-10 lg:pt-48 container mx-auto relative ">
         <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20 md:flex">
           <div className=" md:flex-shrink-0">
             <img
