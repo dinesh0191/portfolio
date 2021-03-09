@@ -9,10 +9,10 @@ const Project = () => {
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome to projects page!
         </h2>
-        <section className="grid grid-cols gap-8 md:grid-cols-2">
+        <section className="relative grid grid-flow-cols gap-4 md:grid-cols-2 md:gap-8">
           {projectWork.projects.map((project) => (
             <article
-              className="relative rounded-lg shadow-xl bg-white p-16  md:flex-shrink-0"
+              className="relative rounded-lg shadow-xl bg-white px-4 py-8 md:p-16"
               key={project.title}
             >
               <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
@@ -25,7 +25,7 @@ const Project = () => {
                   {project.title}
                 </a>
               </h3>
-              <div className="text-gray-500 text-xs space-x-4">
+              <div className="text-gray-500">
                 <div className="technology-stack">
                   <p>Technology Stack - </p>
                   {project.skills.map((item, i) => (

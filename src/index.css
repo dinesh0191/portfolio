@@ -2,38 +2,6 @@
 @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 
-/* .theme-dark {
-  --dark-text: #292929;
-  --light-text: #f9f8f8;
-  --dark-background: #2f4550;
-  --light-background: #586f7c;
-  --accent: #b8d8d9;
-  --button-border: #b8d8d9;
-}
-
-.theme-light {
-  --dark-text: #5e4b56;
-  --light-text: #5e4b56;
-  --dark-background: white;
-  --light-background: #eddcd2;
-  --accent: #dbe7e4;
-  --button-border: #5e4b56;
-}
-html,
-#root {
-  background: var(--dark-background);
-  color: var(--dark-text);
-  height: 100%;
-}
-
-body {
-  height: 100%;
-}
-
-.main-container {
-  background-color: var(--light-background);
-} */
-
 .cursive {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
@@ -71,12 +39,8 @@ body {
   color: #868e96;
 }
 
-.skills-text-container {
-  display: grid;
-}
-
 .dev-icons {
-  padding-left: 0;
+  padding-left: 1px;
   list-style: none;
   font-size: 56px;
   margin-bottom: 8px;
@@ -123,6 +87,7 @@ body {
 
 .technology-stack {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 

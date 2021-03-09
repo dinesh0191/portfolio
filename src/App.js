@@ -1,21 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./Components/Navbar";
+import Nav from "./Components/Nav";
 import Home from "./Components/Home";
 import Project from "./Components/Project";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
-// import { keepTheme } from "./Components/theme";
-// import { useEffect } from "react/cjs/react.development";
 
 function App() {
-  //   useEffect(() => {
-  //     keepTheme();
-  //   });
-
   return (
     <Router>
-      <Navbar />
+      <Nav />
       <Switch>
         <Route component={Project} path="/project" />
         <Route component={Skills} path="/skills" />
