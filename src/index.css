@@ -6,7 +6,10 @@
   font-family: "Amatic SC", cursive;
   font-weight: 700;
 }
-
+.navbar-custom {
+  height: 80px;
+  align-items: center;
+}
 .porse img {
   margin-left: auto;
   margin-right: auto;
@@ -29,28 +32,26 @@
 }
 
 .skills-heading {
-  font-size: 56px;
   font-weight: 600;
 }
-.skills-text-subtitle,
-.skills-text {
-  font-size: 19px;
+.skills-text-subtitle {
   font-weight: 600;
   color: #868e96;
 }
 
 .dev-icons {
-  padding-left: 1px;
   list-style: none;
-  font-size: 56px;
   margin-bottom: 8px;
   margin-top: 8px;
-  padding-left: 100px;
 }
 .software-skill-inline {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+.skills-text {
+  font-weight: 600;
+  color: #868e96;
 }
 
 .software-skill-inline > i {

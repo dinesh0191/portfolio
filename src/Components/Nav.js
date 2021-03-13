@@ -31,7 +31,7 @@ const Nav = () => {
                   to="/"
                   exact
                   activeClassName="text-white"
-                  className="flex items-center py-6 px-3 mr-4 text-red-600 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
+                  className="flex items-center md:py-6 md:px-3 md:mr-4 text-red-600 hover:text-green-800 text-3xl md:text-4xl font-bold cursive tracking-widest"
                 >
                   dinesh-Yadav
                 </NavLink>
@@ -41,7 +41,7 @@ const Nav = () => {
                   <NavLink
                     to="skills"
                     activeClassName="text-gr bg-black"
-                    className="flex items-center py-3 px-3 my-4 rounded text-red-600 hover:text-green-800"
+                    className="flex items-center md:py-3 md:px-3 my-4 rounded text-red-600 hover:text-green-800"
                   >
                     Skills
                   </NavLink>
@@ -50,7 +50,7 @@ const Nav = () => {
                   <NavLink
                     to="project"
                     activeClassName="text-red-100 bg-green-100"
-                    className="flex items-center py-3 px-3 my-4 rounded text-red-600 hover:text-green-800"
+                    className="flex items-center md:py-3 md:px-3 my-4 rounded text-red-600 hover:text-green-800"
                   >
                     Projects
                   </NavLink>
@@ -59,7 +59,7 @@ const Nav = () => {
                   <NavLink
                     to="about"
                     activeClassName="text-red-100 bg-blue-400"
-                    className="flex items-center py-3 px-3 my-4 rounded text-red-600 hover:text-green-800"
+                    className="flex items-center md:py-3 md:px-3 my-4 rounded text-red-600 hover:text-green-800"
                   >
                     About Me!
                   </NavLink>
@@ -67,7 +67,7 @@ const Nav = () => {
                 <li className="nav-item">
                   <a
                     href="https://drive.google.com/file/d/1IK6H1BEThI4gUFR_P9VppBnJ7Guz67HI/view?usp=sharing"
-                    className="flex items-center py-3 px-3 my-4 rounded text-red-600 hover:text-green-800"
+                    className="flex items-center md:py-3 md:px-3 my-4 rounded text-red-600 hover:text-green-800"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -78,7 +78,7 @@ const Nav = () => {
             </ul>
           </div>
         </div>
-        <div className="py-3 px-3 my-4 col-end-12">
+        <div className="md:py-3 md:px-3 md:my-4 col-end-12">
           <SocialIcon
             url="https://twitter.com/DineshY84547011?s=01"
             className="mr-4"
