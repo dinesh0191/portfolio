@@ -9,6 +9,7 @@
 .navbar-custom {
   height: 80px;
   align-items: center;
+  margin: auto;
 }
 .porse img {
   margin-left: auto;
