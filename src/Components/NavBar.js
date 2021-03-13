@@ -8,7 +8,7 @@ const NavBar = () => {
     <Navbar collapseOnSelect expand="lg" variant="light">
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="navbar-custom">
+        <Nav className="mr-auto navbar-custom">
           <Nav.Link>
             <NavLink
               to="/"
