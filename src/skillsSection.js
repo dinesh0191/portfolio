@@ -21,10 +21,6 @@ export const skillsSection = {
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt",
     },
-    // {
-    //   skillName: "sass",
-    //   fontAwesomeClassname: "fab fa-sass",
-    // },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js",
@@ -33,22 +29,10 @@ export const skillsSection = {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react",
     },
-    // {
-    //   skillName: "nodejs",
-    //   fontAwesomeClassname: "fab fa-node",
-    // },
-    // {
-    //   skillName: "swift",
-    //   fontAwesomeClassname: "fab fa-swift",
-    // },
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm",
     },
-    // {
-    //   skillName: "sql-database",
-    //   fontAwesomeClassname: "fas fa-database",
-    // },
     {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire",
@@ -147,6 +131,39 @@ export const projectWork = {
       ],
       display: true,
     },
+    // {
+    //   title: "The Magic Blog",
+    //   description:
+    //     "First project using vanilla JavaScript here I used weather API from rapid API platform and trying to display the user's location, current time, weather conditions and the temperature in three different units i.e. Kelvin, Celsius and Fahrenheit one can experience this by clicking on the temperature. ☁",
+    //   link: "https://magic-blogs.web.app/",
+    //   skills: [
+    //    {
+    //   skillName: "html-5",
+    //   fontAwesomeClassname: "fab fa-html5",
+    // },
+    // {
+    //   skillName: "css3",
+    //   fontAwesomeClassname: "fab fa-css3-alt",
+    // },
+    // {
+    //   skillName: "JavaScript",
+    //   fontAwesomeClassname: "fab fa-js",
+    // },
+    // {
+    //   skillName: "reactjs",
+    //   fontAwesomeClassname: "fab fa-react",
+    // },
+    // {
+    //   skillName: "npm",
+    //   fontAwesomeClassname: "fab fa-npm",
+    // },
+    // {
+    //   skillName: "firebase",
+    //   fontAwesomeClassname: "fas fa-fire",
+    // },
+    //   ],
+    //   display: true,
+    // },
   ],
 };
 

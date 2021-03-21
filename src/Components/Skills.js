@@ -6,7 +6,7 @@ import DisplayLottie from "./DisplayLottie";
 
 function Skills() {
   return (
-    <div className="skills-main-div grid grid-cols gap-8 md:grid-cols-2">
+    <div className="skills-main-div grid grid-cols md:grid-cols-2">
       <Fade left duration={4000}>
         <div className="skills-image-div">
           {illustration.animated ? (
@@ -21,7 +21,7 @@ function Skills() {
         </div>
       </Fade>
       <Fade right duration={2000}>
-        <div className="grid grid-flow-row my-4 auto-rows-max">
+        <div className="grid grid-flow-row auto-rows-max">
           <div className="skills-heading text-4xl md:text-6xl my-3">
             {skillsSection.title}
           </div>
