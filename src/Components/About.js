@@ -1,41 +1,27 @@
 import React from "react";
 import dineshYadav from "../Assets/dineshYadav.jpg";
-import { Fade } from "react-reveal";
 import { contactInfo, aboutME } from "../skillsSection";
+import styled from "styled-components";
 import { SocialIcon } from "react-social-icons";
-import aboutbg from "../Assets/about-bg.jpg";
+import { Fade } from "react-reveal";
 
-function About() {
+const Abo = () => {
   return (
-    <main className="relative">
-      <img
-        src={aboutbg}
-        alt="bg-for-about-page"
-        className="absolute w-full h-full"
-      />
-
-      <div className="p-10 lg:pt-48 container mx-auto relative ">
-        <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20 md:flex">
-          <div className=" md:flex-shrink-0">
-            <img
-              src={dineshYadav}
-              alt={aboutME.name}
-              className="rounded md:w-32 h-32 lg:w-64 lg:h-64 mr-8"
-            />
-          </div>
-          <div className="text-lg flex flex-col justify-center">
-            <h1 className="cursive text-6xl text-green-300 mb-4">
-              Hey there, I'm{" "}
-              <span className="text-green-100">{aboutME.name}</span>
-              🖐️
+    <Container>
+      <Content>
+        <Main>
+          <Image>
+            <img src={dineshYadav} alt="user" />
+          </Image>
+          <About>
+            <h1>
+              Hey there, I'm <span>{aboutME.name}</span> 🖐️
             </h1>
-            <div className="prose lg:prose-xl text-white">{aboutME.bio}</div>
-            <div className="prose lg:prose-xl text-white">- {aboutME.goal}</div>
-            <div className="prose lg:prose-xl text-white">
-              - {aboutME.funFact}
-            </div>
-          </div>
-        </section>
+            <p>{aboutME.bio}</p>
+            <p>{aboutME.goal}</p>
+            <p>{aboutME.funFact}</p>
+          </About>
+        </Main>
         <Fade bottom duration={2000}>
           <section className="contact-section">
             <div className="porse lg:prose-xl text-white text-3xl">
@@ -78,9 +64,57 @@ function About() {
             </a>
           </section>
         </Fade>
-      </div>
-    </main>
+      </Content>
+    </Container>
   );
-}
+};
 
-export default About;
+export default Abo;
+
+const Container = styled.div`
+  background-color: #60a5fa;
+  height: auto;
+`;
+
+const Content = styled.div`
+  padding: 0.1px;
+`;
+
+const Main = styled.div`
+  max-width: 1200px;
+  display: grid;
+  border-radius: 8px;
+  background-color: #065f46;
+  margin: 5% 5% 10px 5%;
+  padding: 2.5rem;
+  height: auto;
+
+  @media (min-width: 600px) {
+    grid-template-columns: 30% 70%;
+  }
+`;
+
+const Image = styled.div`
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+  }
+`;
+
+const About = styled.div`
+  padding: 16px;
+  h1 {
+    color: #6ee7b7;
+    font-family: "Amatic SC", cursive;
+    font-size: 56px;
+  }
+  span {
+    color: #d1fae5;
+  }
+
+  p {
+    color: white;
+    font-size: 20px;
+  }
+`;

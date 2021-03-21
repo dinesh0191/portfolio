@@ -2,6 +2,11 @@
 @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .cursive {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
@@ -46,7 +51,6 @@
 .software-skill-inline {
   display: inline-block;
   margin-right: 20px;
-  margin-bottom: 20px;
 }
 .skills-text {
   font-weight: 600;
@@ -80,8 +84,6 @@
   padding-right: 8px;
 }
 .dev-icons-project {
-  padding-left: 0;
-  list-style: none;
   font-size: 28px;
 }
 
@@ -95,6 +97,7 @@
   font-size: 20px;
   padding-top: 5px;
 }
+
 .view-link {
   margin-top: 10px;
 }

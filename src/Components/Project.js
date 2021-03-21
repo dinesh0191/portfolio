@@ -1,70 +1,132 @@
 import React from "react";
+import styled from "styled-components";
 import { projectWork } from "../skillsSection";
 
-const Project = () => {
+const P = () => {
   return (
-    <main className="bg-green-100 w-full h-full p-2 md:p-12">
-      <section className="container mx-auto">
-        <h1 className="text-3xl md:text-5xl flex justify-center cursive">
-          Projects
-        </h1>
-        <h2 className="text-md md:text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to projects page!
-        </h2>
-        <section className="relative grid md:grid-flow-cols lg:grid-cols-2 gap-8">
-          {projectWork.projects.map((project) => (
-            <article
-              className="relative rounded-md shadow-md bg-white px-3 py-8 md:p-16"
-              key={project.title}
-            >
-              <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
-                <a
-                  href={project.link}
-                  alt={project.title}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {project.title}
-                </a>
-              </h3>
-              <div className="text-gray-500">
-                <div className="technology-stack">
-                  <p>Technology Stack - </p>
-                  {project.skills.map((item, i) => (
-                    <div className="icons">
-                      <ul className="dev-icons-project">
-                        <li
-                          key={i}
-                          className="software-skill-inline 2xl md:3xl"
-                          name={item.skillName}
-                        >
-                          <i className={item.fontAwesomeClassname}></i>
-                        </li>
-                      </ul>
-                    </div>
-                  ))}
+    <Container>
+      <Heading>
+        <Title>Projects</Title>
+        <SubTitle>Welcome to projects page!</SubTitle>
+      </Heading>
+      <Content>
+        {projectWork.projects.map((project) => (
+          <Projects key={project.title}>
+            <Name>
+              <a href={project.link} rel="noopener noreferrer" taget="_blank">
+                {project.title}
+              </a>
+            </Name>
+            <Tech>
+              <span>Technology Stack -</span>
+              {project.skills.map((item, i) => (
+                <div className="icons">
+                  <ul className="dev-icons-project">
+                    <li
+                      key={i}
+                      className="software-skill-inline"
+                      name={item.skillName}
+                    >
+                      <i className={item.fontAwesomeClassname}></i>
+                    </li>
+                  </ul>
                 </div>
-                <p className="text-md md:text-lg text-gray-700 leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="view-link">
-                  <a
-                    href={project.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="text-red-500 font-bold hover:underline hover:text-red-400"
-                  >
-                    View the Project{" "}
-                    <span role="img" aria-label="right-pointer"></span>
-                  </a>
-                </div>
-              </div>
-            </article>
-          ))}
-        </section>
-      </section>
-    </main>
+              ))}
+            </Tech>
+            <Summary>{project.description}</Summary>
+            <ToProject>
+              <a href={project.link} rel="noopener noreferrer" target="_blank">
+                View the Project
+              </a>
+            </ToProject>
+          </Projects>
+        ))}
+      </Content>
+    </Container>
   );
 };
 
-export default Project;
+export default P;
+
+const Container = styled.div`
+  background-color: #d1fae5;
+  width: 100%;
+  height: full;
+`;
+
+const Heading = styled.div`
+  display: grid;
+  place-items: center;
+`;
+
+const Title = styled.h1`
+  font-size: 42px;
+  font-family: "Amatic SC", cursive;
+`;
+
+const SubTitle = styled.p`
+  font-size: 18px;
+`;
+
+const Content = styled.div`
+  max-width: 1200px;
+  display: grid;
+  grid-gap: 2rem;
+  margin: 0 auto;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
+const Projects = styled.div`
+  background-color: white;
+  padding: 1rem;
+  height: 100%;
+  border-radius: 8px;
+`;
+
+const Name = styled.div`
+  padding: 8px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: #b91c1c;
+  }
+`;
+
+const Tech = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  span {
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    color: gray;
+  }
+`;
+
+const Summary = styled.p`
+  padding: 0 8px 0 8px;
+  font-weight: 400;
+`;
+
+const ToProject = styled.div`
+  padding: 0 0 8px 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+
+  a:hover {
+    text-decoration: underline;
+    color: #f87171;
+  }
+`;
