@@ -52,6 +52,39 @@ export const contactInfo = {
 export const projectWork = {
   projects: [
     {
+      title: "The Magic Blog",
+      description:
+        "The magic blog is an application where one can add and read blogs. In this application, I used useState, useEffect, useParams, useHistory etc. First time used styled-components and it's an amazing experience with them, they are easy to handle and easy to allocate the design. Recently noticed that in my other projects if someone adds some random text with the required URL there is nothing on the screen except the navbar. This project fixed that issue. And it is great learning for me to improve myself in the path of front-end development.",
+      link: "https://magic-blogs.web.app/",
+      skills: [
+        {
+          skillName: "html-5",
+          fontAwesomeClassname: "fab fa-html5",
+        },
+        {
+          skillName: "css3",
+          fontAwesomeClassname: "fab fa-css3-alt",
+        },
+        {
+          skillName: "JavaScript",
+          fontAwesomeClassname: "fab fa-js",
+        },
+        {
+          skillName: "reactjs",
+          fontAwesomeClassname: "fab fa-react",
+        },
+        {
+          skillName: "npm",
+          fontAwesomeClassname: "fab fa-npm",
+        },
+        {
+          skillName: "firebase",
+          fontAwesomeClassname: "fas fa-fire",
+        },
+      ],
+      display: true,
+    },
+    {
       title: "Messenger Bottles",
       description:
         "Messenger bottles is an application that is so close to my heart, it took me 3 months to build this and still scope of improvement is there. Basically, this application is a clone of slack where one can log in to the application with google, then join different channels or create a new channel if likes to. In the case of so many channels, you can search for a specific channel in the search bar. For better readability of text, I provided a random background colour so that one can easily differentiate. Still working and improving this application, thank you. 😊",
@@ -131,39 +164,6 @@ export const projectWork = {
       ],
       display: true,
     },
-    // {
-    //   title: "The Magic Blog",
-    //   description:
-    //     "First project using vanilla JavaScript here I used weather API from rapid API platform and trying to display the user's location, current time, weather conditions and the temperature in three different units i.e. Kelvin, Celsius and Fahrenheit one can experience this by clicking on the temperature. ☁",
-    //   link: "https://magic-blogs.web.app/",
-    //   skills: [
-    //    {
-    //   skillName: "html-5",
-    //   fontAwesomeClassname: "fab fa-html5",
-    // },
-    // {
-    //   skillName: "css3",
-    //   fontAwesomeClassname: "fab fa-css3-alt",
-    // },
-    // {
-    //   skillName: "JavaScript",
-    //   fontAwesomeClassname: "fab fa-js",
-    // },
-    // {
-    //   skillName: "reactjs",
-    //   fontAwesomeClassname: "fab fa-react",
-    // },
-    // {
-    //   skillName: "npm",
-    //   fontAwesomeClassname: "fab fa-npm",
-    // },
-    // {
-    //   skillName: "firebase",
-    //   fontAwesomeClassname: "fas fa-fire",
-    // },
-    //   ],
-    //   display: true,
-    // },
   ],
 };
 

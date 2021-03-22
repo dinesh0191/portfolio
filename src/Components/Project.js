@@ -13,7 +13,7 @@ const P = () => {
         {projectWork.projects.map((project) => (
           <Projects key={project.title}>
             <Name>
-              <a href={project.link} rel="noopener noreferrer" taget="_blank">
+              <a href={project.link} rel="noopener noreferrer" target="_blank">
                 {project.title}
               </a>
             </Name>
@@ -80,6 +80,7 @@ const Content = styled.div`
 `;
 const Projects = styled.div`
   background-color: white;
+  margin-top: 4px;
   padding: 1rem;
   height: 100%;
   border-radius: 8px;
