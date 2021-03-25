@@ -46,7 +46,7 @@ const NavBar = () => {
             </NavLink>
           </Nav.Link>
           <a
-            href="https://drive.google.com/file/d/1IK6H1BEThI4gUFR_P9VppBnJ7Guz67HI/view?usp=sharing"
+            href="https://drive.google.com/file/d/15mbHJk8zw-iN_CW2CazA5RNnwYG79aQl/view?usp=sharing"
             className="flex items-center md:py-3 md:px-3 my-4 rounded text-red-600 hover:text-green-800"
             target="_blank"
             rel="noopener noreferrer"
