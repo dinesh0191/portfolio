@@ -73,18 +73,22 @@ const Content = styled.div`
   max-width: 1200px;
   display: grid;
   grid-gap: 2rem;
-  margin: 2rem 25% 0 25%;
+  margin-top: 1rem;
 
   @media (min-width: 600px) {
-    grid-template-columns: repeat(1fr);
+    margin: 2rem 25% 0 25%;
   }
 `;
 const Projects = styled.div`
   background-color: white;
   margin-top: 4px;
-  padding: 1rem;
+  padding: 2.3px;
   height: 100%;
   border-radius: 8px;
+
+  @media (min-width: 600px) {
+    padding: 1rem;
+  }
 `;
 
 const Name = styled.div`
