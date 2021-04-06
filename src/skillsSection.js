@@ -164,6 +164,27 @@ export const projectWork = {
       ],
       display: true,
     },
+    {
+      title: "News App",
+      description:
+        "In this app I am using API from Gnews this will provide worldwide news articles and headlines from all over the web in realtime. Here I showed a navbar and a badge with the help of HTML and CSS. The rest of the content will generate dynamically with the help of JavaScript. 📰",
+      link: "https://dinesh-news.netlify.app/",
+      skills: [
+        {
+          skillName: "html-5",
+          fontAwesomeClassname: "fab fa-html5",
+        },
+        {
+          skillName: "css3",
+          fontAwesomeClassname: "fab fa-css3-alt",
+        },
+        {
+          skillName: "JavaScript",
+          fontAwesomeClassname: "fab fa-js",
+        },
+      ],
+      display: true,
+    },
   ],
 };
 

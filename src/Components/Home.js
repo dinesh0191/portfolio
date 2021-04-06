@@ -18,7 +18,7 @@ function Home() {
           </Fade>
           <Fade right duration={5000}>
             <div className="font-bold cursive leading-none lg:leading-snug home-name">
-              Self-taught Web-Developer
+              A Self-taught Web-Developer
             </div>
           </Fade>
         </section>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { projectWork } from "../skillsSection";
 
-const P = () => {
+const Project = () => {
   return (
     <Container>
       <Heading>
@@ -46,7 +46,7 @@ const P = () => {
   );
 };
 
-export default P;
+export default Project;
 
 const Container = styled.div`
   background-color: #d1fae5;
@@ -61,6 +61,7 @@ const Heading = styled.div`
 
 const Title = styled.h1`
   font-size: 42px;
+  margin-top: 10px;
   font-family: "Amatic SC", cursive;
 `;
 
@@ -72,10 +73,10 @@ const Content = styled.div`
   max-width: 1200px;
   display: grid;
   grid-gap: 2rem;
-  margin: 0 auto;
+  margin: 2rem 25% 0 25%;
 
   @media (min-width: 600px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
   }
 `;
 const Projects = styled.div`
@@ -121,9 +122,9 @@ const Summary = styled.p`
 `;
 
 const ToProject = styled.div`
-  padding: 0 0 8px 8px;
+  padding: 8px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
 
   a:hover {

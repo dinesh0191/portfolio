@@ -58,21 +58,21 @@ const NavBar = () => {
       <Navbar.Brand href="#home">
         <SocialIcon
           url="https://twitter.com/DineshY84547011?s=01"
-          className="mr-4"
+          className="mr-4 social-icon"
           target="_blank"
           fgColor="#fff"
           style={{ height: 35, width: 35 }}
         />
         <SocialIcon
           url="https://github.com/dinesh0191"
-          className="mr-4"
+          className="mr-4 social-icon"
           target="_blank"
           fgColor="#fff"
           style={{ height: 35, width: 35 }}
         />
         <SocialIcon
           url="https://linkedin.com/in/dinesh-yadav-057055189"
-          className="mr-4"
+          className="mr-4 social-icon"
           target="_blank"
           fgColor="#fff"
           style={{ height: 35, width: 35 }}

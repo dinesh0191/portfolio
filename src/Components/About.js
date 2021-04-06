@@ -15,7 +15,9 @@ const Abo = () => {
           </Image>
           <About>
             <h1>
-              Hey there, I'm <span>{aboutME.name}</span> 🖐️
+              Hey there, I'm <span>{aboutME.name}</span>
+              {"  "}
+              <span className="hand"> 🖐️</span>
             </h1>
             <p>{aboutME.bio}</p>
             <p>{aboutME.goal}</p>
@@ -51,13 +53,13 @@ const Abo = () => {
               />
             </div>
             <a
-              className="porse lg:prose-xl text-white number"
+              className="porse lg:prose-xl text-white number contact-detail"
               href={"tel:" + contactInfo.number}
             >
               {contactInfo.number}
             </a>{" "}
             <a
-              className="porse lg:prose-xl text-white"
+              className="porse lg:prose-xl text-white contact-detail"
               href={"mailto:" + contactInfo.email_address}
             >
               {contactInfo.email_address}

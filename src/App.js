@@ -7,7 +7,7 @@ import Project from "./Components/Project";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <NavBar />
@@ -21,6 +21,6 @@ function App() {
       </Switch>
     </Router>
   );
-}
+};
 
 export default App;
