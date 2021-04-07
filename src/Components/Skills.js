@@ -21,7 +21,7 @@ function Skills() {
         </div>
       </Fade>
       <Fade right duration={2000}>
-        <div className="grid grid-flow-row auto-rows-max">
+        <div className="grid grid-flow-row px-2 auto-rows-max">
           <div className="skills-heading text-4xl md:text-6xl my-3">
             {skillsSection.title}
           </div>

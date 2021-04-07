@@ -139,3 +139,62 @@
   display: inline-block;
   transform-origin: 70% 70%;
 }
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+#cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all 0.5s;
+}
+
+.sidebar {
+  display: grid;
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  background: white;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-icons {
+  margin-left: 8px;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel {
+  left: 245px;
+}

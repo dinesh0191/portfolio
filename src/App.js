@@ -6,19 +6,23 @@ import Home from "./Components/Home";
 import Project from "./Components/Project";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
+// import Nav from "./Components/Nav";
 
 const App = () => {
   return (
     <Router>
       <NavBar />
-      <Switch>
-        <Route component={Project} path="/project" />
-        <Route component={Skills} path="/skills" />
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route component={Home} path="/" exact />
-      </Switch>
+      {/* <Nav /> */}
+      <>
+        <Switch>
+          <Route component={Project} path="/project" />
+          <Route component={Skills} path="/skills" />
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route component={Home} path="/" exact />
+        </Switch>
+      </>
     </Router>
   );
 };

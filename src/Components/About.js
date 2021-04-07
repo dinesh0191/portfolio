@@ -19,7 +19,7 @@ const Abo = () => {
               {"  "}
               <span className="hand"> 🖐️</span>
             </h1>
-            <p>{aboutME.bio}</p>
+            <p>{aboutME.bio}</p> <br />
             <p>{aboutME.goal}</p>
             <p>{aboutME.funFact}</p>
           </About>

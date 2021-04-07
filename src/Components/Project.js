@@ -51,7 +51,7 @@ export default Project;
 const Container = styled.div`
   background-color: #d1fae5;
   width: 100%;
-  height: full;
+  height: auto;
 `;
 
 const Heading = styled.div`
@@ -110,6 +110,7 @@ const Name = styled.div`
 const Tech = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-evenly;
 
   span {
