@@ -85,10 +85,10 @@ export const projectWork = {
       display: true,
     },
     {
-      title: "Messenger Bottles",
+      title: "Disney clone",
       description:
-        "Messenger bottles is an application that is so close to my heart, it took me 3 months to build this and still scope of improvement is there. Basically, this application is a clone of slack where one can log in to the application with google, then join different channels or create a new channel if likes to. In the case of so many channels, you can search for a specific channel in the search bar. For better readability of text, I provided a random background colour so that one can easily differentiate. Still working and improving this application, thank you. 😊",
-      link: "https://messenger-bottles.netlify.app/",
+        "Disney clone is an application that is so close to my heart, it took me 3 months to build this and still scope of improvement is there. Basically, this application is a clone of Disney where one can log in to the application with Google. Tried to make a look-alike application to show and test my frontend skills. Still working and improving this application, thank you. 😊",
+      link: "https://disney-0191.netlify.app/",
       skills: [
         {
           skillName: "html-5",
@@ -190,8 +190,7 @@ export const projectWork = {
 
 export const aboutME = {
   name: "Dinesh Yadav",
-  bio:
-    "A Civil engineering graduate of the 2016 batch. Since then started working and managing construction projects. From the past few years started taking interest in the IT industry and the pandemic allowed me to explore it, a self-learned front-end web developer who created some projects in HTML, CSS, JavaScript and React.js., currently exploring React native 😎",
+  bio: "A Civil engineering graduate of the 2016 batch. Since then started working and managing construction projects. From the past few years started taking interest in the IT industry and the pandemic allowed me to explore it, a self-learned front-end web developer who created some projects in HTML, CSS, JavaScript and React.js., currently exploring React native 😎",
   goal: "🥅 2021 Goals: Explore and learn more in the front-end technologies",
   funFact: "⚡ Fun fact: I love to read Indian history",
 };
