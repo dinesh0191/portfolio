@@ -7,7 +7,7 @@ function Home() {
       <img
         src="https://wallpaperaccess.com/full/1657858.jpg"
         alt=""
-        className="absolute object-cover w-full h-full"
+        className="absolute object-cover w-full h-full overflow-hidden"
       />
       <div className="home-text">
         <section className="min-h-screen pt-12 lg:pt-64 px-8">
