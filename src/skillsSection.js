@@ -190,7 +190,7 @@ export const projectWork = {
 
 export const aboutME = {
   name: "Dinesh Yadav",
-  bio: "A Civil engineering graduate of the 2016 batch. Since then started working and managing construction projects. From the past few years started taking interest in the IT industry and the pandemic allowed me to explore it, a self-learned front-end web developer who created some projects in HTML, CSS, JavaScript and React.js., currently exploring React native 😎",
+  bio: "A Civil engineering graduate of the 2016 batch. Since then started working and managing construction projects. In 2018 started learning HTML, CSS and JavaScript and then got my first freelance gig and there with the help of team learned a lot and delivered the project with some ups and downs. Still, there is a lot to explore wish me luck. 😎",
   goal: "🥅 2021 Goals: Explore and learn more in the front-end technologies",
   funFact: "⚡ Fun fact: I love to read Indian history",
 };
